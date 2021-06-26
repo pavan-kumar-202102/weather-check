@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: linear-gradient(35deg,#2e86de 25%,#48dbfb 80%);
+    color: white;
+  gap: 50px;
+  text-align:center;
+}
+.temparature_description{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+#temp{
+  font-size:50px;
+}
+h2{
+  font-size: 40px;
+}
+h2 span{
+  margin: 9px;
+  font-size: 40px;
+}
+sup{
+  font-size:25px;
+}
+
+.location{
+  display: flex;
+  gap: 300px;
+}
+    </style>
+</head>
+<body>
+    <h1>Weather Report</h1>
+    <div class="location">
+      <div>
+        <h1>Time Zone</h1>
+        <div id="time"></div>
+        <div id="city"></div>
+      </div>
+        <p id ="icon">icon</p>
+    </div>
+    <div class="temparature_description">
+        <div> <h2><span id="temp">34</span><sup>0</sup><span>C</span> </h2>
+            
+        </div>
+      <p id="des"></p>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
